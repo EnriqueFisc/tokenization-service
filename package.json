@@ -1,0 +1,18 @@
+{
+  "name": "tokenizaiton-service",
+  "version": "1.0.0",
+  "description": "Mircoservice to tokenization user",
+  "main": "index.js",
+  "author": "Jorge Fischer",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.0.2"
+  },
+  "scripts": {
+    "dev": "nodemon index"
+  }
+}
