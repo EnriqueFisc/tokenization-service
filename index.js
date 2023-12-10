@@ -4,6 +4,7 @@ require('./src/config');
 const express = require('express');
 const cors    = require('cors');
 const app     = express();
+// const { documentation } = 
 
 const { 
     json, 
@@ -21,8 +22,10 @@ app.use( json() );
 app.use(urlencoded({ extended: false}));
 
 // MICROSERVICE ROUTES
-
 app.use( require('./src/routes') );
+
+// DOCUMENTATION ROUTE
+app.use( require('./src/apiDoc/swagger') )
 
 app.get('/', (req, res, next) => {
     res.json({
